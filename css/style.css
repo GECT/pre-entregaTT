@@ -47,7 +47,17 @@ section {
     flex-direction: column;
     gap: 5px;
     text-align: justify;
+    box-sizing: border-box;
 }
+
+/* @media (max-width: 600px) {
+    .articulo {
+        padding: 10px;
+        border-radius: 10px;
+        max-width: 100%;
+        width: 100%;
+    }
+} */
 
 .imagen-redondeada {
     border-radius: 15px; 
@@ -90,7 +100,7 @@ header {
     font-size: 10px;
     margin: 10;
     font-size: 24px;
-    color: #2b2b2b
+    color: #555555
 }
 
 .contenedor-header h2 {
@@ -123,11 +133,11 @@ nav ul li a {
     display: inline-block;
     padding: 1px 15px;
     text-decoration: none;
-    color: rgb(7, 7, 7);
+    color: rgb(0, 0, 0);
     font-weight: regular;
     border: 0px solid #7F55B1; 
     border-radius: 15px;
-    background-color: #2e2e2e;
+    background-color: #3f3f3f;
     transition: all 0.3s ease-in-out;
 }
 
@@ -207,12 +217,12 @@ textarea {
     height: 30px;
 }
 
-/* Responsivo */
-@media (max-width: 600px) {
+
+/* @media (max-width: 600px) {
     form {
         max-width: 90%;
     }
-}
+} */
 
 /* Footer */
 
@@ -455,6 +465,9 @@ footer {
     font-size: 14px;
     color: #ccc;
 }
+
+
+/* Responsivo */
 
 @media (max-width: 900px) {
     section {
