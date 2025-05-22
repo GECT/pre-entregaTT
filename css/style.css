@@ -50,14 +50,6 @@ section {
     box-sizing: border-box;
 }
 
-/* @media (max-width: 600px) {
-    .articulo {
-        padding: 10px;
-        border-radius: 10px;
-        max-width: 100%;
-        width: 100%;
-    }
-} */
 
 .imagen-redondeada {
     border-radius: 15px; 
@@ -137,7 +129,7 @@ nav ul li a {
     font-weight: regular;
     border: 0px solid #7F55B1; 
     border-radius: 15px;
-    background-color: #3f3f3f;
+    background-color: #494949;
     transition: all 0.3s ease-in-out;
 }
 
@@ -146,8 +138,6 @@ nav ul li a:hover {
     color: #ffffff;
     font-weight: semibold;
     filter: drop-shadow(0 0 5px rgb(255, 255, 255));
-
-
 }
 
 
@@ -422,6 +412,7 @@ footer {
 
 /* carrito de compras */
 
+
 #shop-car-section {
     display: flex;
     justify-content: center;
@@ -468,6 +459,7 @@ footer {
 
 
 /* Responsivo */
+
 
 @media (max-width: 900px) {
     section {
