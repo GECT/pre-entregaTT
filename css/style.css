@@ -1,0 +1,508 @@
+/* Estilos generales */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Favorit, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background: #0d0d0d;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    margin-left: 0px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+section {
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 20px;
+    text-align: center;
+    color: #c0c0c0;
+}
+
+.articulo {
+    padding: 30px;
+    background: #161616;
+    border-radius: 15px;
+    border: 0.1px solid #313131;
+    box-shadow: 0 4px 18px rgba(255, 255, 255, 0.1);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: justify;
+}
+
+.imagen-redondeada {
+    border-radius: 15px; 
+    border: 2px solid blue; 
+    padding: 5px; 
+    margin: 10px; 
+}
+
+
+/* Header */
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    background-color: #0d0d0d;
+    color: white;
+    text-align: center;
+    border-bottom: 0.5px solid #20162b;
+    filter: drop-shadow(0 0 22px rgb(24, 24, 24));
+}
+
+.contenedor-header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo img {
+    width: 90px;
+    height: auto;    
+}
+.logo img:hover {
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.404));
+}
+
+.contenedor-header h1 {
+    font-size: 10px;
+    margin: 10;
+    font-size: 24px;
+    color: #2b2b2b
+}
+
+.contenedor-header h2 {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+.titulo-contacto {
+    margin-top: 1rem;
+    text-align: center; 
+    font-weight: 100;
+    color: #ffffff;
+    font-size: 30px
+}
+
+/* Navegación */
+
+
+nav ul {
+    list-style: none;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 13px;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 1px 15px;
+    text-decoration: none;
+    color: rgb(7, 7, 7);
+    font-weight: regular;
+    border: 0px solid #7F55B1; 
+    border-radius: 15px;
+    background-color: #2e2e2e;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #414141;
+    color: #ffffff;
+    font-weight: semibold;
+    filter: drop-shadow(0 0 5px rgb(255, 255, 255));
+
+
+}
+
+
+/* formulario */
+
+#contacto {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+form {
+    background: #161616;
+    padding: 30px;
+    border-radius: 15px;
+    border: 0.5px solid #313131;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+label {
+    font-size: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+input, textarea {
+    padding: 8px;
+    border: 1px solid #414141;
+    border-radius: 30px;
+    font-size: 10px;
+    width: 100%;
+    background: #222222;
+    color: #fff;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #252525;
+}
+
+button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(49, 49, 49);
+    margin-top: 70px;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 8px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #33cccc;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Ajuste del texto */
+textarea {
+    resize: none;
+    height: 30px;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    form {
+        max-width: 90%;
+    }
+}
+
+/* Footer */
+
+.redes-sociales {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+}
+
+.redes-sociales li {
+    display: inline;
+}
+
+.redes-sociales a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.redes-sociales a:hover {
+    color: #33cccc;
+}
+
+footer {
+    flex-shrink: 0;
+    background-color: #160f1d;
+    color: white;
+    text-align: center;
+    gap: 5px;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    font-size: 10px;
+    position: static;
+    border-top: 0.5px solid #20162b;
+    filter: drop-shadow(0 0 22px rgb(24, 24, 24));
+}
+
+
+/* grid */
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.grid-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.image-box {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(22, 22, 22);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+.video-box {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(22, 22, 22);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+.price-tag {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 8px 6px;
+    border-radius: 0 12px 0 0;
+    background: linear-gradient(90deg, #33264156 80%, #c9579225 100%);
+    color: #fff;
+    text-align: left;
+    font-size: 15px;
+    font-family: "PT Serif", serif;
+    font-weight: 600;
+    font-style: italic;
+    z-index: 2;
+    min-width: unset;
+    max-width: 80%;
+    box-sizing: border-box;
+    opacity: 0.95;
+
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.info-box {
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background: #161616;
+}
+.info-box p {
+    margin: 0;
+    font-size: 12px;
+    color: #e7e7e7;
+}
+
+.info-box button {
+    margin-top: 5px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #222222;
+    color: white;
+    font-size: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.info-box button:hover {
+    background-color: #414141;
+}
+
+.info-box .favorite-icon {
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.info-box .favorite-icon:hover {
+    filter: drop-shadow(0 0 10px rgba(255, 215, 0, 1));
+}
+
+/* Sección de Reseñas */
+
+.reseñas-section {
+    margin: 40px auto;
+    max-width: 900px;
+    padding: 20px;
+    color: #cccccc;
+    text-align: center;
+    filter: drop-shadow(0 0 22px rgb(36, 18, 35));
+}
+.reseñas-section h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #a5a5a5;
+}
+
+.reseñas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.reseña-card {
+    background: #222;
+    border-radius: 18px;
+    border: 1px solid #333;
+    padding: 24px 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    text-align: left;
+}
+
+.reseña-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.reseña-card span {
+    font-size: 13px;
+    color: #33cccc;
+}
+
+
+/* carrito de compras */
+
+#shop-car-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.shop-car-box {
+    position: relative;
+    background: #161616;
+    padding: 30px;
+    border-radius: 15px;
+    border: 0.5px solid #313131;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    max-width: 400px;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+.shop-car-bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.10;
+    z-index: 0;
+    pointer-events: none;
+    border-radius: 15px;
+}
+
+.shop-car-box h2 {
+    font-size: 20px;
+    font-weight: 100;
+}
+.shop-car-box p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+@media (max-width: 900px) {
+    section {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 10px;
+    }
+    .reseñas-section {
+        max-width: 98vw;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    section {
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 5px;
+    }
+    .grid-container,
+    .reseñas-grid {
+        padding: 0;
+        gap: 8px;
+    }
+    .image-box,
+    .reseña-card,
+    .shop-car-box,
+    form {
+        padding: 10px;
+        border-radius: 10px;
+        max-width: 100%;
+    }
+    .shop-car-box {
+        min-width: 0;
+    }
+    .contenedor-header {
+        flex-direction: column;
+        gap: 2px;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 8px;
+        padding: 0;
+    }
+    h1, h2 {
+        font-size: 18px;
+    }
+    .reseñas-section h2 {
+        font-size: 16px;
+    }
+}
