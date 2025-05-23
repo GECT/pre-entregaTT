@@ -511,3 +511,20 @@ footer {
         font-size: 16px;
     }
 }
+
+/* media player */
+
+.video-player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 560px;
+    height: 315px;
+    background-color: #0d0d0d;
+    border-radius: 10px;
+    border: 2px solid #313131;
+    overflow: hidden;
+    position: relative;
+    filter: drop-shadow(0 0 22px rgb(36, 18, 35));
+}
