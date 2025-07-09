@@ -44,21 +44,34 @@
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../pages/contacto.html">Contacto</a></li>
                 <li><a href="../pages/Reseñas.html">Reseñas</a></li>
-                <li><a href="../pages/shop-car.html"><i class="fa-solid fa-cart-shopping"
-                            style="color: #33cccc;"></i></a></li>
+                <li><a href="../pages/shop-car.html"><i class="fa-solid fa-cart-shopping" style="color: #33cccc;"><span
+                                id="contador-carrito"> 0</span></i></i></a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- MAIN -->
+
     <main>
-        <section id="shop-car-section">
+        <section id="shop-car-section" class="productos">
             <div class="shop-car-box">
                 <img src="../media/carrito de compra.webp" alt="carrito de compra" class="shop-car-bg-img">
                 <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
                 <h2>Carrito de Compras</h2>
-                <p>Tu carrito está vacío</p>
             </div>
         </section>
+        <div id="contenedor-carrito" class="grid-container">
+            <!-- productos carrito -->
+        </div>
     </main>
+    <div id="acciones-carrito">
+        <!-- botones carrito -->
+    </div>
+    <div id="resumen-carrito">
+        <!-- resumen del carrito -->
+    </div>
+
+
     <!-- SECCION FOOTER -->
     <footer>
         <ul class="redes-sociales">
@@ -78,6 +91,7 @@
         </ul>
         <p>© 2025 Golem Market - Todos los derechos reservados</p>
     </footer>
+    <script src="../js/carrito.js"></script>
 </body>
 
 </html>
