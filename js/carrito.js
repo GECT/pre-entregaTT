@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 seccionProductos.appendChild(tarjetaProducto);
             });
-            renderizarBotones();
         }
+        renderizarBotones();
     };
 
     const renderizarBotones = () => {
@@ -56,11 +56,11 @@ document.addEventListener("DOMContentLoaded", () => {
             });
 
             let btnFinalizar = document.createElement("button");
-            btnFinalizar.textContent = "Finalizar compra";
+            btnFinalizar.textContent = "Realizar compra";
             btnFinalizar.classList.add("btn-carrito");
 
             btnFinalizar.addEventListener("click", () => {
-                let confirmado = confirm("¿Deseas finalizar la compra?");
+                let confirmado = confirm("¿Deseas realizar la compra?");
                 if (confirmado) {
                     alert("Gracias por tu compra");
                     localStorage.removeItem("carrito");
